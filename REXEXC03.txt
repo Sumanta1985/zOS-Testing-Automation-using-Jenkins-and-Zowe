@@ -1,0 +1,14 @@
+********************************* Top of Data **********************************
+//REXEXC03 JOB (5990),'BATCH IVP',CLASS=A,MSGCLASS=X,NOTIFY=&SYSUID,
+//      TIME=NOLIMIT
+//**********************************************************************
+//**********************************************************************
+//REXJ     EXEC PGM=IKJEFT01,DYNAMNBR=45
+//SYSPROC  DD DISP=SHR,DSN=za1018.new.pds.test
+//SYSTSPRT DD SYSOUT=*
+//SYSTSIN  DD *
+%SMPREX03
+//*
+//*
+//
+******************************** Bottom of Data ********************************
