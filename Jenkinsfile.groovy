@@ -1,6 +1,13 @@
 pipeline {
         agent any
         stages {
+	    stage('Profile set') {
+                steps {
+                    script {
+                            build job: 'Zowe-zOSMF-Profile'
+                        }
+                    }
+               }
             stage('Build') {
                 steps {
                     script {
